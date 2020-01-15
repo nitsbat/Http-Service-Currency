@@ -1,0 +1,40 @@
+<h5> Enter the Amount </h5>
+<div class="input-group input-group-sm mb-3" >
+        <div class="input-group-prepend">
+            <div ng-bind-html= "trustedField">
+            </div>
+        </div>
+        <div class="col-xs-3">
+            <input type="text" class="form-control" ng-model = "textInput" aria-label="Amount (to the nearest dollar)" ng>
+        </div>
+        <div class="input-group-append">
+          
+          
+          <div ng-show = "textInput.length > 0">
+                <h4>  <span id="spaces" class="badge badge-secondary"> convert to : </span></h4>
+          </div>
+          
+          <div class="dropdown" id="spaces" ng-show = "textInput.length > 0">
+                <div class="col-md-2">
+                    <select ng-model="currencySelected" ng-options = "item.currency for item in list" id="select" ng-change="getPrice()" >
+                            <option value="">--Select Currency--</option> 
+                    </select>
+                </div>
+          </div>
+          <div ng-show = "textInput.length > 0">
+                <h4>  <span id="spaces" class="badge badge-secondary"> = </span></h4>
+          </div>
+
+          <div class="row">
+                <div class="col-md-1" ng-bind-html= "trustedField1" id="spaces">
+                </div>
+                <div ng-show="mainPrice" class="col-md-1" >
+                    <h3><span  style="color: green; font-size: 13pt"> {{ mainPrice }} </span> </h3>
+                </div>    
+          </div>
+                
+          
+
+        </div>
+        
+</div>

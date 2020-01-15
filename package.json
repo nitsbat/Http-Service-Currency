@@ -1,0 +1,27 @@
+{
+  "name": "angular-currency-converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run open",
+    "open": "concurrently \"http-server -a localhost -p 5500\" \"open http://localhost:5500/build\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.8.8",
+    "jasmine": "^3.4.0",
+    "karma": "^4.2.0",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-coverage": "^2.0.1"
+  },
+  "dependencies": {
+    "concurrently": "^5.0.2",
+    "http-server": "^0.12.1"
+  }
+}

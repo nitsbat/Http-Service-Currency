@@ -1,0 +1,17 @@
+body {
+    background-image: url("images/light.png");
+    background-color: #cccccc;
+}
+
+.w3-myfont {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center
+  }
+
+#spaces {
+    margin-left: 20px;
+}
+
+#select {
+    margin-top: 5px;
+}
