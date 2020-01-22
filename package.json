@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server -a localhost -p 5500"
+    "start": "http-server -a 0.0.0.0 -p 5500"
   },
   "author": "",
   "license": "ISC",
